@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufti Inayatullah Al Qasmi</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white; /* Reverted background color */
+            color: black; /* Reverted text color */
+        }
+        .header {
+            background-color: #567A9F;
+            padding: 35px 20px;
+            text-align: left;
+        }
+        .title {
+            font-size: 38px;
+            font-weight: bold;
+            color: white;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .content, .watch-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .box, .watch-box {
+            width: 250px;
+            background: #CFBF8C;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            height: 180px;
+            color: black; /* Reverted text color */
+        }
+        .watch-btn {
+            background-color: #567A9F;
+            color: white;
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+        }
+        .watch-btn:hover {
+            background-color: #45678A;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .thumbnail-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .thumbnail-grid img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        @media (max-width: 768px) {
+            .content, .watch-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box, .watch-box {
+                width: 80%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Mufti Inayatullah Al Qasmi</div>
+    </div>
+
+    <!-- Books, Articles & Haftroza Khatme Naboovat Section -->
+    <div class="content">
+        <div class="box">
+            <h2>Books</h2>
+            <p>A collection of books to explore.</p>
+        </div>
+        <div class="box">
+            <h2>Articles</h2>
+            <p>Read insightful articles.</p>
+        </div>
+        <div class="box">
+            <h2>Haftroza Khatme Naboovat</h2>
+            <p>Weekly program updates and teachings.</p>
+        </div>
+    </div>
+
+    <!-- Watch Section -->
+    <div class="watch-section">
+        <div class="watch-box">
+            <h2>Watch Bayanat</h2>
+            <div class="thumbnail-grid">
+                <img src="abbu.jpg" alt="Bayan 1">
+                <img src="abb.jpg" alt="Bayan 2">
+            </div>
+            <a href="#" class="watch-btn">Watch Now</a>
+        </div>
+        <div class="watch-box">
+            <h2>Watch Shorts or Reels</h2>
+            <p>Follow on Instagram for more.</p>
+            <a href="#" class="watch-btn">Watch on Instagram</a>
+        </div>
+        <div class="watch-box">
+            <h2>Watch Live Streams</h2>
+            <p>Join live sessions on Facebook.</p>
+            <a href="#" class="watch-btn">Watch on Facebook</a>
+        </div>
+    </div>
+</body>
+</html>
