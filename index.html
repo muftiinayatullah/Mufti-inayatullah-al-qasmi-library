@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mufti Inayatullah Al Qasmi</title>
+    <style>
+        /* Imported Urdu Font */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #6B8F71; /* Background color */
+            color: black;
+        }
+        .header {
+            background-color: #345635;
+            padding: 35px 20px;
+            text-align: left;
+        }
+        .title {
+            font-size: 38px;
+            font-weight: bold;
+            color: #E3EFD3;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        .content, .watch-section {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .box, .watch-box {
+            width: 250px;
+            background: #AEC3B0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            height: 180px;
+            color: black;
+            position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .box:hover, .box:focus-within {
+            transform: scale(1.08);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .box:active {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+        }
+        .urdu-text {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            font-size: 18px;
+            display: block;
+            margin-top: -5px;
+        }
+        .watch-btn {
+            background-color: #567A9F;
+            color: white;
+            padding: 6px 12px;
+            font-size: 12px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+            border: none;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+        .watch-btn:hover {
+            background-color: #45678A;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .thumbnail-grid {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .thumbnail-grid img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .watch-box p {
+            margin-top: -2px;
+        }
+        @media (max-width: 768px) {
+            .content, .watch-section {
+                flex-direction: column;
+                align-items: center;
+            }
+            .box, .watch-box {
+                width: 80%;
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">Mufti Inayatullah Al Qasmi</div>
+    </div>
+
+    <!-- Books, Articles & Haftroza Khatme Naboovat Section -->
+    <div class="content">
+        <a href="books.html" class="box">
+            <h2>Books</h2>
+            <p>A collection of books to explore.<br><span class="urdu-text">اردو میں کتابیں پڑھیں۔</span></p>
+        </a>
+        <a href="articles.html" class="box">
+            <h2>Articles</h2>
+            <p>Read insightful articles.<br><span class="urdu-text">مظامین پڑھیں۔</span></p>
+        </a>
+        <a href="haftroza-khatme-naboovat.html" class="box">
+            <h2>Haftroza Khatme Naboovat</h2>
+            <p>Weekly program updates and teachings.<br><span class="urdu-text">ہفت روزہ ختم نبوت</span></p>
+        </a>
+    </div>
+
+    <!-- Watch Section -->
+    <div class="watch-section">
+        <div class="watch-box">
+            <h2>Watch Bayanat</h2>
+            <div class="thumbnail-grid">
+                <img src="abbu.jpg" alt="Bayan 1">
+                <img src="abb.jpg" alt="Bayan 2">
+            </div>
+            <a href="https://www.youtube.com/@ChiragDaan/videos" class="watch-btn">Watch Now</a>
+            <p><span class="urdu-text">بیانات سنیں</span></p>
+        </div>
+        <div class="watch-box">
+            <h2>Watch Shorts</h2>
+            <p>Follow on Instagram for more.</p>
+            <a href="https://www.instagram.com/chirag.daan/" class="watch-btn">Watch on Instagram</a>
+        </div>
+        <div class="watch-box">
+            <h2>Watch Live Streams</h2>
+            <p>Join live sessions on Facebook.</p>
+            <a href="https://www.facebook.com/chiragdaan" class="watch-btn">Watch on Facebook</a>
+        </div>
+    </div>
+</body>
+</html>
